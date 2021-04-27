@@ -18,3 +18,6 @@ puts "----------"
 @store2.employees.create(first_name: "Ragnar", last_name: "Lothbroke", hourly_rate: 60)
 @store2.employees.create(first_name: "Germanicus", last_name: "Something", hourly_rate: 70)
 @store2.employees.create(first_name: "Spartacus", last_name: "Unknown", hourly_rate: 60)
+Employee.create(first_name: "I should not be in the table", last_name: "Seriously", hourly_rate: 60)
+
+puts "Emloyee count: #{Employee.count}"
